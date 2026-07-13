@@ -1,0 +1,94 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\OneDrive\\PROGRAMAS ASUS17\\Programas\\GRUPO MT\\GRUPOMT\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1D3B56AE-B49F-4D24-A9C3-815226C0A7D2}|GRUPOMT\\GRUPOMT.csproj|d:\\onedrive\\programas asus17\\programas\\grupo mt\\grupomt\\grupomt\\views\\toyoservice\\toyoservice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1D3B56AE-B49F-4D24-A9C3-815226C0A7D2}|GRUPOMT\\GRUPOMT.csproj|solutionrelative:grupomt\\views\\toyoservice\\toyoservice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D3B56AE-B49F-4D24-A9C3-815226C0A7D2}|GRUPOMT\\GRUPOMT.csproj|d:\\onedrive\\programas asus17\\programas\\grupo mt\\grupomt\\grupomt\\views\\sakura\\sakura.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1D3B56AE-B49F-4D24-A9C3-815226C0A7D2}|GRUPOMT\\GRUPOMT.csproj|solutionrelative:grupomt\\views\\sakura\\sakura.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D3B56AE-B49F-4D24-A9C3-815226C0A7D2}|GRUPOMT\\GRUPOMT.csproj|d:\\onedrive\\programas asus17\\programas\\grupo mt\\grupomt\\grupomt\\wwwroot\\css\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{1D3B56AE-B49F-4D24-A9C3-815226C0A7D2}|GRUPOMT\\GRUPOMT.csproj|solutionrelative:grupomt\\wwwroot\\css\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D3B56AE-B49F-4D24-A9C3-815226C0A7D2}|GRUPOMT\\GRUPOMT.csproj|d:\\onedrive\\programas asus17\\programas\\grupo mt\\grupomt\\grupomt\\views\\grupomt\\grupomt.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1D3B56AE-B49F-4D24-A9C3-815226C0A7D2}|GRUPOMT\\GRUPOMT.csproj|solutionrelative:grupomt\\views\\grupomt\\grupomt.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 27,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "home.css",
+              "DocumentMoniker": "D:\\OneDrive\\PROGRAMAS ASUS17\\Programas\\GRUPO MT\\GRUPOMT\\GRUPOMT\\wwwroot\\css\\home.css",
+              "RelativeDocumentMoniker": "GRUPOMT\\wwwroot\\css\\home.css",
+              "ToolTip": "D:\\OneDrive\\PROGRAMAS ASUS17\\Programas\\GRUPO MT\\GRUPOMT\\GRUPOMT\\wwwroot\\css\\home.css",
+              "RelativeToolTip": "GRUPOMT\\wwwroot\\css\\home.css",
+              "ViewState": "AgIAAL0AAAAAAAAAAAAuwEABAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-07-11T22:51:40.692Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 209,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ToyoService.cshtml",
+              "DocumentMoniker": "D:\\OneDrive\\PROGRAMAS ASUS17\\Programas\\GRUPO MT\\GRUPOMT\\GRUPOMT\\Views\\ToyoService\\ToyoService.cshtml",
+              "RelativeDocumentMoniker": "GRUPOMT\\Views\\ToyoService\\ToyoService.cshtml",
+              "ToolTip": "D:\\OneDrive\\PROGRAMAS ASUS17\\Programas\\GRUPO MT\\GRUPOMT\\GRUPOMT\\Views\\ToyoService\\ToyoService.cshtml",
+              "RelativeToolTip": "GRUPOMT\\Views\\ToyoService\\ToyoService.cshtml",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAAH4AAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-12T15:07:26.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GrupoMT.cshtml",
+              "DocumentMoniker": "D:\\OneDrive\\PROGRAMAS ASUS17\\Programas\\GRUPO MT\\GRUPOMT\\GRUPOMT\\Views\\GrupoMT\\GrupoMT.cshtml",
+              "RelativeDocumentMoniker": "GRUPOMT\\Views\\GrupoMT\\GrupoMT.cshtml",
+              "ToolTip": "D:\\OneDrive\\PROGRAMAS ASUS17\\Programas\\GRUPO MT\\GRUPOMT\\GRUPOMT\\Views\\GrupoMT\\GrupoMT.cshtml",
+              "RelativeToolTip": "GRUPOMT\\Views\\GrupoMT\\GrupoMT.cshtml",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAtwFgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-12T14:51:18.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Sakura.cshtml",
+              "DocumentMoniker": "D:\\OneDrive\\PROGRAMAS ASUS17\\Programas\\GRUPO MT\\GRUPOMT\\GRUPOMT\\Views\\Sakura\\Sakura.cshtml",
+              "RelativeDocumentMoniker": "GRUPOMT\\Views\\Sakura\\Sakura.cshtml",
+              "ToolTip": "D:\\OneDrive\\PROGRAMAS ASUS17\\Programas\\GRUPO MT\\GRUPOMT\\GRUPOMT\\Views\\Sakura\\Sakura.cshtml",
+              "RelativeToolTip": "GRUPOMT\\Views\\Sakura\\Sakura.cshtml",
+              "ViewState": "AgIAANoAAAAAAAAAAAAAAOwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-12T02:25:12.06Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

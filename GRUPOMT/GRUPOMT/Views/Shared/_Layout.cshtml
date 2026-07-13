@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="es" class="h-100">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - GRUPO MT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body class="d-flex flex-column h-100 bg-light-corporate">
+
+    <div class="bg-dark py-1 text-white fs-8 d-none d-md-block">
+        <div class="container-fluid px-4 d-flex justify-content-between">
+            <div><i class="bi bi-geo-alt-fill me-1 text-danger"></i> Lima, Perú</div>
+            <div>
+                <i class="bi bi-envelope-fill me-1 text-info"></i> contacto@grupomt.com
+                <span class="mx-2 opacity-50">|</span>
+                <i class="bi bi-telephone-fill me-1 text-success"></i> +51 999 999 999
+            </div>
+        </div>
+    </div>
+
+    <header class="fixed-top shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom py-3">
+            <div class="container-fluid px-4">
+                <a class="navbar-brand" asp-controller="GrupoMT" asp-action="GrupoMT">
+                    <img src="~/img/grupomt.png" alt="Logo Grupo MT" style="height: 35px; width: auto;" />
+                </a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item"><a class="nav-link px-3 fw-semibold" asp-controller="GrupoMT" asp-action="GrupoMT">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link px-3 fw-semibold" asp-controller="GrupoMT" asp-action="GrupoMT" asp-fragment="nosotros">Nosotros</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle px-3 fw-semibold" href="#" data-bs-toggle="dropdown">Nuestras Empresas</a>
+                            <ul class="dropdown-menu border-0 shadow-sm mt-2">
+                                <li><a class="dropdown-item py-2" asp-controller="ToyoService" asp-action="ToyoService"><i class="bi bi-tools me-2 text-danger"></i>Toyo Service</a></li>
+                                <li><a class="dropdown-item py-2" asp-controller="Sakura" asp-action="Sakura"><i class="bi bi-truck me-2 text-info"></i>Transportes Sakura</a></li>
+                                <li><a class="dropdown-item py-2" asp-controller="MTRepresentaciones" asp-action="MTRepresentaciones"><i class="bi bi-briefcase me-2 text-dark"></i>MT Representaciones</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ms-lg-3"><a class="btn btn-corporate-red px-3" asp-controller="GrupoMT" asp-action="GrupoMT" asp-fragment="unidades">Ver Servicios</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main role="main" class="flex-grow-1">
+        @RenderBody()
+    </main>
+
+    <footer class="footer-gris-custom py-4 mt-5 border-top">
+        <div class="container px-4">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3 text-uppercase text-danger">Grupo MT</h5>
+                    <p class="fs-7 text-muted">Líderes en soluciones industriales, automotrices y logísticas con más de 30 años de solidez en el mercado nacional.</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">Accesos</h5>
+                    <ul class="list-unstyled fs-7">
+                        <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Política de Calidad</a></li>
+                        <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Trabaja con Nosotros</a></li>
+                        <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Libro de Reclamaciones</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+
+            <div class="text-center">
+                <div class="d-flex align-items-center justify-content-center gap-2 mb-2">
+                    <span class="fs-8 text-muted">Desarrollado por</span>
+                    <a href="https://tu-portfolio.com" target="_blank" class="text-decoration-none">
+                        <img src="~/img/LOGO.png" alt="Tu Marca" style="height: 25px; opacity: 0.8; transition: 0.3s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'" />
+                    </a>
+                </div>
+                <div class="fs-8 text-muted">
+                    &copy; @DateTime.Now.Year - Grupo MT
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

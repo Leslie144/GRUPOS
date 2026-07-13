@@ -1,0 +1,373 @@
+/* ==========================================================================
+   1. VARIABLES DE MARCA (PALETA CORPORATIVA)
+   ========================================================================== */
+:root {
+    --mt-red-vibrant: #e31919;
+    --mt-gray-dark: #2d3748;
+    --mt-gray-light: #f8fafc;
+    --sakura-blue-clear: #00b4ec;
+    --border-color: #e2e8f0;
+}
+
+/* ==========================================================================
+   2. CONFIGURACIÓN ESTRUCTURAL Y DE NAVEGACIÓN
+   ========================================================================== */
+html, body {
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: #f6f8fa; /* Fondo gris claro corporativo */
+    color: var(--mt-gray-dark);
+    display: flex;
+    flex-direction: column;
+    /* Relleno inferior para que el contenido no se oculte tras el footer fijo */
+    padding-bottom: 78px;
+}
+
+/* El contenedor principal se estira automáticamente */
+.flex-grow-1 {
+    flex: 1 0 auto;
+    padding-top: 76px; /* Ajusta este valor si tu barra superior y nav suman más o menos altura */
+}
+
+/* Enfoque accesible y estilización de focos */
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem #ffffff, 0 0 0 0.25rem var(--mt-red-vibrant);
+    outline: none;
+}
+
+/* Elementos tipográficos */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: #1a202c;
+}
+
+/* Links globales */
+a {
+    transition: color 0.2s ease;
+}
+
+/* ==========================================================================
+   3. CABECERA (NAVBAR) Y ELEMENTOS DE MENÚ
+   ========================================================================== */
+.box-shadow-sm {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+}
+
+.bg-light-corporate {
+    background-color: #f6f8fa;
+}
+
+.text-danger-corporate {
+    color: var(--mt-red-vibrant);
+}
+
+.text-secondary-corporate {
+    color: #5a6a85 !important;
+}
+
+.fs-7 {
+    font-size: 0.875rem;
+}
+
+/* Efectos de transición en el Navbar */
+.navbar-nav .nav-link {
+    transition: color 0.2s ease-in-out;
+}
+
+    .navbar-nav .nav-link:hover,
+    .hover-link:hover {
+        color: var(--mt-red-vibrant) !important;
+    }
+
+/* Dropdown del menú refinado */
+.dropdown-menu {
+    border: 1px solid var(--border-color);
+}
+
+.dropdown-item:hover {
+    background-color: #f1f5f9;
+    color: var(--mt-red-vibrant);
+}
+
+/* ==========================================================================
+   4. TARJETAS CORPORATIVAS (UNIDADES DE NEGOCIO)
+   ========================================================================== */
+.card-enterprise {
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.01);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s ease;
+}
+
+    /* Interacción flotante premium */
+    .card-enterprise:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02) !important;
+        border-color: #cbd5e1;
+    }
+
+/* Contenedores de Logos para mantener proporciones correctas */
+.logo-container-horizontal {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+
+.logo-container-square {
+    width: 85px;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ==========================================================================
+   5. DISTINTIVOS (BADGES) Y BOTONES CORPORATIVOS
+   ========================================================================== */
+.slogan-badge-toyo {
+    background-color: #fff5f5;
+    color: var(--mt-red-vibrant);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    padding: 6px 12px;
+    border-radius: 30px;
+    border: 1px solid #fed7d7;
+}
+
+.slogan-badge-sakura {
+    background-color: #f0faff;
+    color: #0284c7;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    padding: 6px 12px;
+    border-radius: 30px;
+    border: 1px solid #e0f2fe;
+}
+
+/* Estilo Botón Rojo (Grupo MT y Toyo) */
+.btn-corporate-red {
+    background-color: var(--mt-red-vibrant);
+    color: #ffffff;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    transition: background-color 0.2s ease;
+}
+
+    .btn-corporate-red:hover {
+        background-color: #c51212;
+        color: #ffffff;
+    }
+
+/* Estilo Botón Azul (Sakura) */
+.btn-corporate-blue {
+    background-color: var(--sakura-blue-clear);
+    color: #ffffff;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    transition: background-color 0.2s ease;
+}
+
+    .btn-corporate-blue:hover {
+        background-color: #0099c9;
+        color: #ffffff;
+    }
+
+/* Estilo Botón Delineado Neutral */
+.btn-corporate-outline {
+    background-color: transparent;
+    color: var(--mt-gray-dark);
+    font-weight: 600;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    padding: 10px 20px;
+    transition: all 0.2s ease;
+}
+
+    .btn-corporate-outline:hover {
+        background-color: #f1f5f9;
+        border-color: #cbd5e1;
+        color: var(--mt-gray-dark);
+    }
+
+/* ==========================================================================
+   6. FIJACIÓN ABSOLUTA DEL FOOTER (STICKY / FIXED)
+   ========================================================================== */
+footer.fixed-bottom {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+    background-color: #ffffff !important;
+    border-top: 1px solid var(--border-color);
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.02);
+    flex-shrink: 0;
+}
+
+/* ==========================================================================
+   7. ANIMACIÓN Y MAQUETACIÓN DE MARQUESINA DE LOGOS (Clientes Sakura)
+   ========================================================================== */
+/* Se removió el fondo blanco y los bordes para un acabado transparente e integrado */
+.logos-marquee .bg-white {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.logos-marquee img {
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+    .logos-marquee img:hover {
+        filter: grayscale(0%);
+        opacity: 1;
+    }
+
+/* Pausa el movimiento de los logos cuando el usuario pasa el mouse por encima */
+.logos-marquee:hover {
+    animation-play-state: paused !important;
+}
+
+@keyframes scrollLogos {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-50% - 2.5rem));
+    }
+}
+
+/* ==========================================================================
+   8. ESTILOS ESPECÍFICOS - TRANSPORTES SAKURA
+   ========================================================================== */
+/* Botones Nav Pills (Sedes) Interactivos */
+.nav-pills .nav-link {
+    color: #475569;
+    background-color: #ffffff;
+    border-color: #e2e8f0 !important;
+    transition: all 0.2s ease;
+}
+
+    .nav-pills .nav-link:hover {
+        color: var(--sakura-blue-clear);
+        background-color: #f0faff;
+        border-color: #e0f2fe !important;
+    }
+
+    .nav-pills .nav-link.active,
+    .nav-pills .show > .nav-link {
+        color: #ffffff !important;
+        background-color: var(--sakura-blue-clear) !important;
+        border-color: var(--sakura-blue-clear) !important;
+        box-shadow: 0 4px 12px rgba(0, 180, 236, 0.2);
+    }
+
+/* Clases útiles generales */
+.fs-8 {
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.shadow-2xs {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.02);
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+.object-fit-contain {
+    object-fit: contain;
+}
+
+/* ==========================================================================
+   9. ESTILOS DE LÍNEA DE TIEMPO MINIMALISTA (Home / Historia)
+   ========================================================================== */
+.minimal-timeline {
+    padding-left: 20px;
+}
+
+    /* La línea vertical continua que une a todas las bolitas */
+    .minimal-timeline::before {
+        content: '';
+        position: absolute;
+        top: 8px;
+        left: 6px;
+        bottom: 8px;
+        width: 2px;
+        background-color: #cbd5e1;
+        z-index: 1;
+    }
+
+.timeline-step {
+    padding-left: 25px;
+    z-index: 2;
+}
+
+/* Los círculos pequeños (bolitas) */
+.timeline-dot {
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    z-index: 3;
+    border: 3px solid #f6f8fa;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.timeline-step:hover .timeline-dot {
+    transform: scale(1.3);
+}
+
+.timeline-year {
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+
+.timeline-meta p.border-start {
+    border-color: #e2e8f0 !important;
+    border-width: 2px !important;
+}
+
+.fs-7.5 {
+    font-size: 0.85rem;
+}
+
+/* Clase para limpiar fondos de imágenes de logo */
+.logo-transparent {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* En tu archivo site.css */
+.footer-gris-custom {
+    background-color: #cecece; /* Puedes ajustar este valor hexadecimal */
+    color: white;
+}

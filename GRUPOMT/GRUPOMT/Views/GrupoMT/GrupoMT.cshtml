@@ -1,0 +1,204 @@
+﻿@{
+    ViewData["Title"] = "Inicio";
+}
+<head>
+    <link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
+</head>
+
+
+<div class="hero-modern-section position-relative overflow-hidden mb-5">
+    <div class="container-fluid px-4 px-md-5 h-100">
+        <div class="row align-items-center h-100 g-5">
+            <div class="col-lg-7 text-hero-container">
+                <div class="d-inline-flex align-items-center gap-2 mb-3 bg-white px-3 py-1.5 rounded-pill shadow-xs border">
+                    <span class="dot-pulse"></span>
+                    <span class="text-dark fw-bold text-uppercase tracking-wider fs-7.5">40+ Años de Experiencia</span>
+                </div>
+                <h1 class="hero-title fw-black tracking-tight mb-3">
+                    Solidez que impulsa <br class="d-none d-md-block" />
+                    <span class="text-gradient-red">tu camino</span>
+                </h1>
+                <p class="hero-subtitle text-secondary-corporate leading-relaxed mb-4">
+                    Somos un grupo empresarial líder que ofrece servicios altamente eficientes en los sectores de <strong>transporte logístico, pintura automotriz e industrial</strong>. Sincronizamos capacidades integrales para superar las expectativas del mercado nacional.
+                </p>
+                <div class="d-flex flex-wrap gap-3">
+                    <a href="#unidades" class="btn btn-action-primary shadow">Nuestras Empresas</a>
+                    <a href="#historia" class="btn btn-action-secondary">Conócenos <i class="bi bi-arrow-right ms-1"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-5 position-relative d-none d-lg-flex align-items-center justify-content-center image-hero-container">
+                <div class="hero-shape-blob"></div>
+                <div class="hero-shape-circle"></div>
+                <img src="~/img/grupomt.png" alt="Grupo MT" class="img-fluid position-relative z-2 hero-main-logo" asp-append-version="true" />
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container my-5 py-2" id="nosotros">
+    <div class="row align-items-center g-5 mb-5">
+        <div class="col-lg-5">
+            <div class="section-tag mb-2">IDENTIDAD</div>
+            <h2 class="fw-bold text-dark tracking-tight display-6 mb-3">Comprometidos con el desarrollo integral</h2>
+            <p class="text-muted leading-relaxed">
+                Nuestra trayectoria consolidada nos posiciona como un respaldo estratégico confiable. Coordinamos tres unidades de negocio clave: <strong>MT Representaciones</strong>, <strong>Toyo Service</strong> y <strong>Transportes Sakura</strong>.
+            </p>
+            <div class="mt-4">
+                <a href="~/docs/brochure-grupo-mt.pdf" class="btn btn-corporate-outline px-4 py-2 d-inline-flex align-items-center gap-2" download>
+                    <i class="bi bi-file-earmark-pdf text-danger fs-5"></i> Brochure Corporativo
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-7">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="modern-mv-card bg-white p-4 h-100 shadow-xs">
+                        <div class="icon-mv-wrapper bg-danger-light text-danger-corporate mb-3">
+                            <i class="bi bi-bullseye fs-4"></i>
+                        </div>
+                        <h3 class="h5 fw-bold text-dark mb-2">Misión</h3>
+                        <p class="text-muted fs-7.5 leading-relaxed mb-0">
+                            Ofrecer servicios eficientes en los sectores de transporte, pintura automotriz e industrial, mediante un equipo comprometido con la excelencia y satisfacción de nuestros clientes.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="modern-mv-card bg-white p-4 h-100 shadow-xs">
+                        <div class="icon-mv-wrapper bg-info-light text-info mb-3">
+                            <i class="bi bi-eye-fill fs-4"></i>
+                        </div>
+                        <h3 class="h5 fw-bold text-dark mb-2">Visión</h3>
+                        <p class="text-muted fs-7.5 leading-relaxed mb-0">
+                            Ser un grupo de empresas líderes en nuestros sectores, reconocidos por un servicio de calidad integral que contribuye activamente al bienestar del cliente y del medio ambiente.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-white py-5 border-top border-bottom" id="unidades">
+    <div class="container my-4">
+        <div class="text-center mb-5">
+            <div class="section-tag mx-auto mb-2">PORTAFOLIO</div>
+            <h2 class="fw-bold text-dark tracking-tight display-6">Nuestras Unidades de Negocio</h2>
+            <p class="text-muted">Líneas de servicio especializadas y sinérgicas</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 card-enterprise card-toyo shadow-sm bg-light-corporate">
+                    <div class="card-body d-flex flex-column p-4">
+                        <div class="logo-container-horizontal mb-4 mt-2">
+                            <img src="~/img/toyo/toyo.png" alt="Toyo Service" class="img-fluid object-fit-contain" style="max-height: 100%;" asp-append-version="true" />
+                        </div>
+                        <span class="badge slogan-badge-toyo align-self-center mb-3">Alta Tecnología en Repintado</span>
+                        <p class="text-muted text-center flex-grow-1 fs-7.5 leading-relaxed">
+                            Líderes en acabados automotrices con estándares de fábrica y mantenimiento técnico industrial especializado de última generación.
+                        </p>
+                        <a asp-controller="ToyoService" asp-action="ToyoService" class="btn btn-corporate-red w-100 mt-3 text-center">Ir a Toyo Service</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 card-enterprise card-sakura shadow-sm bg-light-corporate">
+                    <div class="card-body d-flex flex-column p-4">
+                        <div class="logo-container-horizontal mb-4 mt-2">
+                            <img src="~/img/sakura/sakura.png" alt="Transportes Turísticos Sakura" class="img-fluid object-fit-contain" style="max-height: 100%;" asp-append-version="true" />
+                        </div>
+                        <span class="badge slogan-badge-sakura align-self-center mb-3">Lo mejor en cadena de frío</span>
+                        <p class="text-muted text-center flex-grow-1 fs-7.5 leading-relaxed">
+                            Especialistas en soluciones logísticas refrigeradas. Custodia rigurosa y transporte seguro de productos a nivel nacional.
+                        </p>
+                        <a asp-controller="Sakura" asp-action="Sakura" class="btn btn-corporate-blue w-100 mt-3 text-center">Ir a Sakura S.A.</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 card-enterprise card-mt shadow-sm bg-light-corporate">
+                    <div class="card-body d-flex flex-column p-4">
+                        <div class="logo-container-square mx-auto mb-3 mt-1 border rounded-circle p-2 bg-white shadow-sm">
+                            <img src="~/img/mtrepresentaciones.png" alt="MT Representaciones" class="img-fluid object-fit-contain" asp-append-version="true" />
+                        </div>
+                        <h4 class="text-center fw-bold text-dark mb-2">MT Representaciones</h4>
+                        <p class="text-muted text-center flex-grow-1 fs-7.5 leading-relaxed">
+                            Importación directa, distribución corporativa y comercialización estratégica de suministros industriales de marcas globales líderes.
+                        </p>
+                        <a asp-controller="MTRepresentaciones" asp-action="MTRepresentaciones" class="btn btn-dark w-100 mt-3 border-0 text-center" style="background-color: #1a202c;">Ver Catálogo B2B</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-light-corporate py-5 border-bottom" id="historia">
+    <div class="container my-3">
+        <div class="text-center mb-5">
+            <div class="section-tag mx-auto mb-2">TRAYECTORIA</div>
+            <h2 class="fw-bold text-dark tracking-tight display-6">Nuestra Historia</h2>
+            <p class="text-muted">Más de 40 años consolidando un servicio integral y diversificado</p>
+        </div>
+
+        <div class="minimal-timeline mx-auto position-relative" style="max-width: 700px;">
+
+            <div class="timeline-step position-relative mb-4">
+                <div class="timeline-dot bg-dark"></div>
+                <div class="timeline-meta">
+                    <span class="timeline-year text-dark fw-bold font-monospace me-2">1980</span>
+                    <h3 class="h6 fw-bold text-dark d-inline-block mb-1">Inicios con Marina Motors</h3>
+                    <p class="text-muted fs-7.5 leading-relaxed mb-0 mt-1 ps-4 border-start">
+                        El punto de partida de nuestra visión empresarial, sentando las bases en el sector automotriz.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-step position-relative mb-4">
+                <div class="timeline-dot bg-danger"></div>
+                <div class="timeline-meta">
+                    <span class="timeline-year text-danger fw-bold font-monospace me-2">1982</span>
+                    <h3 class="h6 fw-bold text-dark d-inline-block mb-1">Fundación de Toyo Service</h3>
+                    <p class="text-muted fs-7.5 leading-relaxed mb-0 mt-1 ps-4 border-start">
+                        Apertura de la sede San Miguel, especializándonos en alta tecnología y acabados de repintado.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-step position-relative mb-4">
+                <div class="timeline-dot bg-info"></div>
+                <div class="timeline-meta">
+                    <span class="timeline-year text-info fw-bold font-monospace me-2">1983</span>
+                    <h3 class="h6 fw-bold text-dark d-inline-block mb-1">Expansión Logística</h3>
+                    <p class="text-muted fs-7.5 leading-relaxed mb-0 mt-1 ps-4 border-start">
+                        Inicio de operaciones de transporte seco con cadenas de retail, marcando nuestro ingreso a la logística nacional.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-step position-relative mb-4">
+                <div class="timeline-dot bg-dark"></div>
+                <div class="timeline-meta">
+                    <span class="timeline-year text-dark fw-bold font-monospace me-2">1990</span>
+                    <h3 class="h6 fw-bold text-dark d-inline-block mb-1">Fundación de MT Representaciones</h3>
+                    <p class="text-muted fs-7.5 leading-relaxed mb-0 mt-1 ps-4 border-start">
+                        Consolidación de nuestra rama comercial mediante la importación y representación directa de marcas globales líderes en insumos industriales.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-step position-relative">
+                <div class="timeline-dot bg-success"></div>
+                <div class="timeline-meta">
+                    <span class="timeline-year text-success fw-bold font-monospace me-2">Hoy</span>
+                    <h3 class="h6 fw-bold text-dark d-inline-block mb-1">Grupo MT: Sinergia Integral</h3>
+                    <p class="text-muted fs-7.5 leading-relaxed mb-0 mt-1 ps-4 border-start">
+                        Más de 4 décadas de trayectoria integrando servicios de logística pesada, mantenimiento técnico avanzado y comercialización B2B.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

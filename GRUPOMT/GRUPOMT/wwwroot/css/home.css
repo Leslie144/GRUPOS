@@ -1,0 +1,343 @@
+﻿/* ==========================================================================
+   1. VARIABLES DE MARCA Y PALETA MODERNIZADA
+   ========================================================================== */
+:root {
+    --mt-red-vibrant: #e31919;
+    --mt-gray-dark: #1e293b;
+    --mt-gray-light: #f8fafc;
+    --sakura-blue-clear: #00b4ec;
+    --border-color: #f1f5f9;
+}
+
+/* ==========================================================================
+   2. CONFIGURACIÓN ESTRUCTURAL GLOBAL
+   ========================================================================== */
+html, body {
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: #fafbfc;
+    color: var(--mt-gray-dark);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 75px;
+}
+
+.flex-grow-1 {
+    flex: 1 0 auto;
+}
+
+/* Estilos de enfoque de accesibilidad */
+.btn:focus, .form-control:focus {
+    box-shadow: 0 0 0 3px rgba(227, 25, 25, 0.15);
+    outline: none;
+}
+
+/* ==========================================================================
+   3. ARQUITECTURA DEL NUEVO HERO MODERNO SPLIT
+   ========================================================================== */
+.hero-modern-section {
+    padding: 60px 0;
+    min-height: 480px;
+    background-color: #fafbfc;
+}
+
+.hero-title {
+    font-size: 3.25rem;
+    font-weight: 800;
+    line-height: 1.15;
+    color: #0f172a;
+}
+
+.text-gradient-red {
+    background: linear-gradient(135deg, #e31919 0%, #ff5252 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    max-width: 620px;
+    color: #475569 !important;
+}
+
+/* Botones de acción principales rediseñados */
+.btn-action-primary {
+    background-color: var(--mt-red-vibrant);
+    color: white;
+    font-weight: 600;
+    padding: 12px 28px;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.25s ease;
+}
+
+    .btn-action-primary:hover {
+        background-color: #c51212;
+        color: white;
+        transform: translateY(-2px);
+    }
+
+.btn-action-secondary {
+    background-color: #e2e8f0;
+    color: #334155;
+    font-weight: 600;
+    padding: 12px 28px;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.25s ease;
+}
+
+    .btn-action-secondary:hover {
+        background-color: #cbd5e1;
+        color: #1e293b;
+    }
+
+/* Formas abstractas decorativas del lado derecho */
+.hero-shape-blob {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    background: radial-gradient(circle, rgba(227,25,25,0.08) 0%, rgba(255,255,255,0) 70%);
+    border-radius: 50%;
+    filter: blur(20px);
+    z-index: 1;
+}
+
+.hero-shape-circle {
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    border: 2px dashed #f1f5f9;
+    border-radius: 50%;
+    z-index: 1;
+    animation: rotateCircle 40s linear infinite;
+}
+
+.hero-main-logo {
+    max-height: 140px;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.04));
+    transition: transform 0.5s ease;
+}
+
+    .hero-main-logo:hover {
+        transform: scale(1.03);
+    }
+
+@keyframes rotateCircle {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Punto indicador animado */
+.dot-pulse {
+    width: 7px;
+    height: 7px;
+    background-color: var(--mt-red-vibrant);
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 0 0 0 rgba(227, 25, 25, 0.4);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(227, 25, 25, 0.4);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 6px rgba(227, 25, 25, 0);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(227, 25, 25, 0);
+    }
+}
+
+/* ==========================================================================
+   4. SECCIONES Y TARJETAS CORPORATIVAS REFINADAS
+   ========================================================================== */
+.section-tag {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: var(--mt-red-vibrant);
+    text-uppercase: uppercase;
+}
+
+.shadow-xs {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+}
+
+.fs-7.5 {
+    font-size: 0.825rem;
+}
+
+/* Tarjetas de Misión y Visión Minimalistas */
+.modern-mv-card {
+    border-radius: 14px;
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+    .modern-mv-card:hover {
+        border-color: #cbd5e1;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.04) !important;
+    }
+
+.icon-mv-wrapper {
+    width: 46px;
+    height: 46px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-danger-light {
+    background-color: #fff5f5;
+}
+
+.bg-info-light {
+    background-color: #f0faff;
+}
+
+/* Tarjetas de Empresas */
+.card-enterprise {
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    background: #ffffff;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+    .card-enterprise:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.04) !important;
+    }
+
+.logo-container-horizontal {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-container-square {
+    width: 85px;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slogan-badge-toyo {
+    background-color: #fff5f5;
+    color: var(--mt-red-vibrant);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 30px;
+    border: 1px solid #fed7d7;
+}
+
+.slogan-badge-sakura {
+    background-color: #f0faff;
+    color: #0284c7;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 30px;
+    border: 1px solid #e0f2fe;
+}
+
+.btn-corporate-red {
+    background-color: var(--mt-red-vibrant);
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 10px 20px;
+    border: none;
+}
+
+    .btn-corporate-red:hover {
+        background-color: #c51212;
+        color: white;
+    }
+
+.btn-corporate-blue {
+    background-color: var(--sakura-blue-clear);
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 10px 20px;
+    border: none;
+}
+
+    .btn-corporate-blue:hover {
+        background-color: #0099c9;
+        color: white;
+    }
+
+.btn-corporate-outline {
+    background-color: transparent;
+    color: #475569;
+    font-weight: 600;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 9px 18px;
+    transition: all 0.2s ease;
+}
+
+    .btn-corporate-outline:hover {
+        background-color: #f8fafc;
+        border-color: #94a3b8;
+        color: #1e293b;
+    }
+
+/* ==========================================================================
+   5. NAVEGACIÓN Y COMPONENTES FIJOS
+   ========================================================================== */
+.box-shadow-sm {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+}
+
+.bg-light-corporate {
+    background-color: #f8fafc;
+}
+
+.text-danger-corporate {
+    color: var(--mt-red-vibrant);
+}
+
+.text-secondary-corporate {
+    color: #64748b !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--mt-red-vibrant) !important;
+}
+
+footer.fixed-bottom {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+    background-color: #ffffff !important;
+    border-top: 1px solid #e2e8f0;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.03);
+}
